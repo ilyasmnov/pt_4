@@ -52,7 +52,7 @@ def test_random_list():
     Создайте список из 10 случайных чисел от 1 до 100 (включая обе границы) и отсортируйте его по возрастанию.
     """
 
-    l = sorted([random.randint(1, 101) for num in range(10)])
+    l = sorted([random.randint(1, 100) for num in range(10)])
 
     assert len(l) == 10
     assert all(l[i] <= l[i + 1] for i in range(len(l) - 1))
