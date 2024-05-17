@@ -54,7 +54,7 @@ def test_random_list():
 
     l = sorted([random.randint(1, 100) for num in range(10)])
 
-    assert len(l) == 100
+    assert len(l) == 10
     assert all(l[i] <= l[i + 1] for i in range(len(l) - 1))
 
 
